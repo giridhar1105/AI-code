@@ -6,6 +6,8 @@ import { ContentBlock, TextBlock } from "@anthropic-ai/sdk/resources";
 import {basePrompt as nodeBasePrompt} from "./defaults/node";
 import {basePrompt as reactBasePrompt} from "./defaults/react";
 import cors from "cors";
+console.log(process.env.ANTHROPIC_API_KEY);
+
 
 const anthropic = new Anthropic();
 const app = express();
